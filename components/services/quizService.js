@@ -60,4 +60,13 @@ angular.module('quizApp').service('quizService',function
       }
     };
 
+    this.getQuizName = function (name) {
+      var quizName;
+      this.quizSampleObj.forEach(function (quiz) {
+        if (quiz.name == name) {
+          quizName = quiz;
+        }
+      })
+      return quizName;
+    }
 })

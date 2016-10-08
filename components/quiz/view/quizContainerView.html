@@ -1,0 +1,10 @@
+<h1>Quiz Container</h1>
+
+<div class="quizContainer" ng-repeat="quiz in quizService">
+	<div class="list" ui-view="list"></div>
+	<div class="detailWrapper">
+		<div class="detailContainer">
+			<div class="detail" ui-view="detail"></div>
+		</div>
+	</div>
+</div>

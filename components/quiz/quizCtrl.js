@@ -1,4 +1,8 @@
 angular.module('quizApp').controller('quizCtrl', function
-($scope, questions, quizService, $stateParams) {
+($scope, quizService, $stateParams) {
 
-})
+$scope.quiz = quizService.getQuizName($stateParams.name)
+
+$scope.test = "Yes";
+
+});
